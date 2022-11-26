@@ -23,6 +23,7 @@ public void valid() {
     if(uname.equals("admin")){
         if (pass.equals("admin")) {
              System.out.println("Login Successfull");
+              System.out.println("The Length of the Password is " + uname.length());
            }
            else{
              System.out.println("Wrong Password");
