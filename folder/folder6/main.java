@@ -9,9 +9,6 @@ public static void main(String[] args) {
     double num, num1, num2;
     double res =0;
     Scanner sc = new Scanner(System.in);
-    
-  
-//    do{
  
     System.out.println("[1] Addition  [2] Subtraction  [3] Multiplication\n[4] Division  [5] Percentage   [6] Exit");
     System.out.println("Please Enter Your Operation");
@@ -73,13 +70,9 @@ public static void main(String[] args) {
      }
 
      else {
-         System.out.println("Error");
-        // 
+       
+         System.out.println("Error");  
      }  
-    //  System.out.println("Do You Want To Continue [yes]");
-    //  s=sc.next();
-    // }
-    //  while (s.equalsIgnoreCase("yes"));
       sc.close();
 }
 };
