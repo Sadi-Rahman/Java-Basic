@@ -6,8 +6,8 @@ class Threading extends Thread{
         try {
              System.out.println("Thread" + Thread.currentThread().getId() + "Running");
         } catch (Exception e) {
-             System.out.println("Exception");
-        }        
+             System.out.println("Exception"); 
+        }   
     }
 
 }

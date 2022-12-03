@@ -1,6 +1,6 @@
 package thread.th1;
 
-public class thread extends Thread{
+class multthread extends Thread{
 
     @Override
     public void run(){
@@ -14,17 +14,17 @@ public class thread extends Thread{
              }
             
         }
-
-        class Multithread{
+    }
+        class thread{
         public static void main(String[] args) {
          //System.out.println("");
 
-        thread th1 = new thread();
+        multthread th1 = new multthread();
         th1.start();
     }
  }
-    }
+}
 
     
     
-}
+
