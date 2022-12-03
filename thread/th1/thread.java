@@ -14,6 +14,17 @@ public class thread extends Thread{
              }
             
         }
+
+        class Multithread{
+        public static void main(String[] args) {
+         //System.out.println("");
+
+        thread th1 = new thread();
+        th1.start();
     }
+ }
+    }
+
+    
     
 }
