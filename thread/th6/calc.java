@@ -19,7 +19,7 @@ class A1 extends Thread {
         System.out.println("SUBTRACTION: " + (i - j));
         System.out.println("MUILTIPLY: " + (i * j));
         System.out.println("DIVIDE: " + (i / j));
-        System.out.println("END Of Thread A");
+        System.out.println("END Of Thread A\n");
     }
 }
 
@@ -32,7 +32,7 @@ class B1 extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Thread B ---Trignometric--- ");
+        System.out.println("\nThread B ---Trignometric--- ");
         System.out.println("SINE of: " + i + " is: " + Math.sin(i));
         System.out.println("COS of: " + i + " is: " + Math.cos(i));
         System.out.println("TAN of: " + i + " is: " + Math.tan(i));
@@ -49,7 +49,7 @@ public class calc {
         int x = sc.nextInt();
         int y = sc.nextInt();
 
-        System.out.println("Enter 2 Numbers for Trignometric Calculation ");
+        System.out.println("Enter 1 Numbers for Trignometric Calculation ");
         int z = sc.nextInt();
 
         A1 a1 = new A1(x, y);
