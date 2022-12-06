@@ -22,6 +22,9 @@ public class map {
         // System.out.println("Values " + lang.values());
         System.out.println("ALL " + lang);
 
+        lang.replace(3, "C++");
+        System.out.println("After Replacement: " + lang);
+
     }
 
 }
