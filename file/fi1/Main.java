@@ -3,15 +3,18 @@ package file.fi1;
 //File file = new file("C:\\user\\firstfile.txt");
 //import java.io.*;
 import java.io.File;
+import java.io.FileWriter;
 
 public class Main {
     public static void main(String[] args) {
-        File F = new File("G:\\Java-Basic\\file\\new.txt");
-        if (F.exists()) {
-            System.out.println("Exists");
-        } else {
-            System.out.println("Created In " + F.getPath());
+        try {
+            FileWriter fWriter = new FileWriter("G:\\Java-Basic\\file\\fi1\\new.txt");
+            fWriter.write("Hey !!!");
+            fWriter.close();
+            System.out.println("Done!");
+        } catch (Exception e) {
+            System.out.println("Error");
+            e.printStackTrace();
         }
-
     }
 }
