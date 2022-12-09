@@ -4,6 +4,9 @@ import java.util.*;
 
 public class map {
     public static void main(String[] args) {
+
+List <>
+
         HashMap<String, Integer> contact = new HashMap<String, Integer>();
         HashMap<Integer, String> lang = new HashMap<Integer, String>();
 
@@ -24,6 +27,8 @@ public class map {
 
         lang.replace(3, "C++");
         System.out.println("After Replacement: " + lang);
+
+
 
     }
 
