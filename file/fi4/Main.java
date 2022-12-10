@@ -47,6 +47,7 @@ public class Main {
 
         A a = new A(z);
         a.start();
-
+        sc.close();
     }
+
 }
