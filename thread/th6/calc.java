@@ -1,6 +1,5 @@
 package thread.th6;
 
-import java.lang.*;
 import java.util.*;
 
 class A1 extends Thread {

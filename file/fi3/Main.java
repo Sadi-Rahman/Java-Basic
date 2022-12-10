@@ -7,14 +7,14 @@ public class Main {
         File dir = new File("G:/Java-Basic/file/test");
         dir.mkdir();
 
-        File file1 = new File("G:/Java-Basic/file/test/new.txt");
+        File file1 = new File("G:/Java-Basic/file/test/New2.txt");
 
         try {
             file1.createNewFile();
             System.out.println("Done");
             try {
                 for (int i = 0; i < 10; i++) {
-                    FileWriter fWriter = new FileWriter("G:/Java-Basic/file/test/new.txt", true);
+                    FileWriter fWriter = new FileWriter("G:/Java-Basic/file/test/New2.txt", true);
                     fWriter.write("Hello\n");
                     fWriter.close();
                 }
