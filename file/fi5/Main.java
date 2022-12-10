@@ -12,11 +12,15 @@ class A extends Thread {
 
     public void run() {
         try {
+            long startTime = System.nanoTime();
             for (int i = 0; i < j; i++) {
                 FileWriter fWriter = new FileWriter("G:/Java-Basic/file/test/New2.txt", true);
                 fWriter.write("Hello\n");
                 fWriter.close();
             }
+            long elapsedTime = System.nanoTime() - startTime;
+            System.out.println("Execution time: " + elapsedTime + " nanoseconds and " + (elapsedTime / 1000000)
+                    + " milliseconds");
             System.out.println("Done Writing File 1");
         } catch (Exception e) {
             System.out.println(e);
@@ -34,11 +38,15 @@ class B extends Thread {
 
     public void run() {
         try {
+            long startTime = System.nanoTime();
             for (int i = 0; i < k; i++) {
                 FileWriter fWriter = new FileWriter("G:/Java-Basic/file/test/New3.txt", true);
                 fWriter.write("Hii\n");
                 fWriter.close();
             }
+            long elapsedTime = System.nanoTime() - startTime;
+            System.out.println("Execution time: " + elapsedTime + " nanoseconds and " + (elapsedTime / 1000000)
+                    + " milliseconds");
             System.out.println("Done Writing File 2");
         } catch (Exception e) {
             System.out.println(e);
