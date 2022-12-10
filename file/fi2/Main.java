@@ -20,7 +20,7 @@ class Main {
                     fWriter.close();
                     System.out.println("Done!");
                 } catch (Exception e) {
-                    System.out.println("Error");
+                    System.out.println(e);
                     e.printStackTrace();
                 }
 

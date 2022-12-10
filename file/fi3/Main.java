@@ -12,6 +12,16 @@ public class Main {
         try {
             file1.createNewFile();
             System.out.println("Done");
+            try {
+                for (int i = 0; i < 10; i++) {
+                    FileWriter fWriter = new FileWriter("G:/Java-Basic/file/test/new.txt", true);
+                    fWriter.write("Hello\n");
+                    fWriter.close();
+                }
+                System.out.println("Done Writing");
+            } catch (Exception e) {
+                System.out.println(e);
+            }
         } catch (Exception e) {
             System.out.println(e);
         }
