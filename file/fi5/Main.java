@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 class A extends Thread {
+
     int j;
 
     A(int z) {
